@@ -47,7 +47,7 @@ This CSV file contains all of the data for the people who *DO* smoke. The data i
 Extra_cost.py  
 The code imports the pandas library, which is a popular Python library for data analysis and manipulation. It then defines three functions: `column_data()`,`sort_data_in_column()`, and `sum_of_column()`. The `column_data()` function takes in a “file_name” and a “column_name” as arguments and returns a column of data from the specified file. The `sort_data_in_column()` function takes in two columns of data and returns the first column sorted in descending order and limited to the length of the second column. Finally, the `sum_of_column()` function takes in two columns of data and returns the difference between the sum of the first column and the sum of the second column.
 
-Main.py
+Main.py   
 This code imports the functions from the "Extra_costs.py" file and then uses them in a new function to read the data from "non_smokers_data.csv" and "smokers_data.csv". Then it extract the "charges" column from each file, sorts the data in the "charges" column from the "non_smokers_data.csv" file and calculates the difference between the sum of the "charges" column from the "smokers_data.csv" file and the sorted "charges" column from the "non_smokers_data.csv" file. The result is then divided by 274, rounded to the nearest 2 decimal places and printed. The final if statement is used to call the `main()` function to display the result in the terminal.
 
 Conclusion  
