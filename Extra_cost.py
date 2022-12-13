@@ -22,10 +22,3 @@ def sum_of_column(column, column2):
     sum_column2 = sum(column2) # Adds all the data in the second specified column
     result =  sum_column1 - sum_column2 # Subtracts both totals
     return result
-
-non_smokers_gathered = column_data("non_smokers_data.csv", "charges")
-smokers_gathered = column_data("smokers_data.csv", "charges")
-sorted_non_smokers = sort_data_in_column(non_smokers_gathered, smokers_gathered)
-sum_of_both = sum_of_column(smokers_gathered, sorted_non_smokers)
-
-print(round(sum_of_both / 274, 2))
